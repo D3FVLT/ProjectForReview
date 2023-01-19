@@ -14,8 +14,8 @@
 
 Для запуска нужно выполнить следующие команды:
 ```bash
-  npm i
-  npm run build
-  npm run start
+  yarn
+  yarn build
+  yarn start
 ```
 

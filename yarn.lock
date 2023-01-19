@@ -739,6 +739,13 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
+"@types/node-xlsx@^0.21.0":
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/@types/node-xlsx/-/node-xlsx-0.21.0.tgz#51693f08b81c42deb8f556e3db7a41ebe441f923"
+  integrity sha512-2phXePog1DbnNWMpl0wEaH/4ABKOBfgp+0IWLFzVzKkaWwHKwT5HcKHZYvEVv/Tntr3xf4J98Syvz7aPUmU2wA==
+  dependencies:
+    node-xlsx "*"
+
 "@types/node@*", "@types/node@^16.11.26":
   version "16.11.33"
   resolved "https://registry.npmjs.org/@types/node/-/node-16.11.33.tgz"
@@ -3795,9 +3802,16 @@ node-releases@^2.0.3:
   resolved "https://registry.npmjs.org/node-releases/-/node-releases-2.0.4.tgz"
   integrity sha512-gbMzqQtTtDz/00jQzZ21PQzdI9PyLYqUSvD0p3naOhX4odFji0ZxYdnVwPTxmSwkmxhcFImpozceidSG+AgoPQ==
 
-node-xlsx@^0.21.0:
+node-xlsx@*:
   version "0.21.0"
   resolved "https://registry.npmjs.org/node-xlsx/-/node-xlsx-0.21.0.tgz"
+  integrity sha512-MB+KcNCuRzwjgr17scpKiVTPd4Vbj3V+7QwKpqACGyJzhvC67xCQUbw2vYEIKtNfMfcLxgB2q2kEuRS8rmak9g==
+  dependencies:
+    xlsx "^0.17.4"
+
+node-xlsx@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/node-xlsx/-/node-xlsx-0.21.0.tgz#085d69869d7fa7ed1e6d2a13eee6aa6dce7867a1"
   integrity sha512-MB+KcNCuRzwjgr17scpKiVTPd4Vbj3V+7QwKpqACGyJzhvC67xCQUbw2vYEIKtNfMfcLxgB2q2kEuRS8rmak9g==
   dependencies:
     xlsx "^0.17.4"
