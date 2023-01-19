@@ -169,17 +169,8 @@ export const findTrack = async (
 export const buildXls = (tracks: Track[]) => {
   const data = tracks.map(t => [
     t.playlistUrl,
-    '',
-    '',
-    '',
     t.title,
-    '',
-    '',
-    '',
     t.adds,
-    '',
-    '',
-    '',
     t.number,
   ]);
   return xlsx.build([
@@ -187,17 +178,8 @@ export const buildXls = (tracks: Track[]) => {
       data: [
         [
           'Playlist URL',
-          '',
-          '',
-          '',
           'Track',
-          '',
-          '',
-          '',
           'Adds',
-          '',
-          '',
-          '',
           'Number',
         ],
         ...data,
