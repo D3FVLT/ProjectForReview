@@ -1,0 +1,24 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "tsBuildInfoFile": "dist/.tsbuildinfo",
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2020",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "rootDir": "./src",
+    "incremental": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": false,
+    "noImplicitAny": false
+  },
+  "exclude": ["node_modules", "dist"]
+}

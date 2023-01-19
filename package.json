@@ -1,0 +1,63 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "license": "proprietary",
+  "private": true,
+  "scripts": {
+    "build": "tsc --build",
+    "start": "node ./dist/main.js",
+    "dev": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node --inspect ./dist/main.js\"",
+    "format": "prettier --config .prettierrc src/**/*.ts --write",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/date-fns": "^2.6.0",
+    "@types/ioredis": "^4.28.10",
+    "@types/lodash": "^4.14.177",
+    "@types/node": "^16.11.26",
+    "@types/node-fetch": "^2.6.1",
+    "@types/source-map-support": "0.5.4",
+    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/parser": "4.33.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-import-resolver-typescript": "2.4.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "3.4.1",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unused-imports": "^1.1.5",
+    "husky": ">=6",
+    "jest": "26.6.3",
+    "lint-staged": ">=10",
+    "prettier": "2.4.1",
+    "ts-node": "^10.4.0",
+    "tsc-watch": "^4.6.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@grammyjs/parse-mode": "^1.1.2",
+    "@grammyjs/router": "^1.1.1",
+    "@satont/grammy-redis-storage": "^1.2.0",
+    "async-mutex": "^0.3.2",
+    "axios": "^0.26.1",
+    "date-fns": "^2.28.0",
+    "dotenv": "^16.0.0",
+    "grammy": "^1.7.3",
+    "ioredis": "^5.0.4",
+    "lodash": "^4.17.21",
+    "node-xlsx": "^0.21.0",
+    "pg": "^8.7.3",
+    "sleep-and-die": "^1.0.0",
+    "typeorm": "^0.3.6",
+    "typeorm-naming-strategies": "^4.1.0"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "npm run lint",
+      "npm run format"
+    ]
+  }
+}
